@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: blue;
+            colour: pink;
+            
+        }
+
+        form {
+            width: 90%;
+            max-width: 600px;
+            margin: 10;
+            background: orange;
+            padding: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 5px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: yellow;
+        }
+
+        input, select, textarea {
+            width: 95%;
+            padding: 8px;
+        }
+
+        .button {
+            width: auto<span></span>;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+
+    <h2>Patient Registration Form</h2>
+
+    <table>
+
+        <tr>
+            <th>Patient Information</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>Patient Name</td>
+            <td>
+                <input type="text" name="patient_name">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Date of Birth</td>
+            <td>
+                <input type="date" name="dob">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <select name="gender">
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>ID Number</td>
+            <td>
+                <input type="text" name="id_number">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Patient ID</td>
+            <td>
+                <input type="text" name="patient_id">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Phone Number</td>
+            <td>
+                <input type="tel" name="phone">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Health Status / Disability</td>
+            <td>
+                <select name="health_status">
+                    <option value="">Select</option>
+                    <option>No Disability</option>
+                    <option>Physical Disability</option>
+                    <option>Visual Disability</option>
+                    <option>Hearing Disability</option>
+                    <option>Other</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+#            <td>
+                <textarea name="address" rows="3"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Marital Status</td>
+            <td>
+                <select name="marital_status">
+                    <option value="">Select Status</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                    <option>Widowed</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Next of Kin</td>
+            <td>
+                <input type="text" name="next_of_kin">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Weight (kg)</td>
+            <td>
+                <input type="number" name="weight" step="0.1">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input class="button" type="submit" value="Register Patient">
+                <input class="button" type="reset" value="Clear">
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+
+</body>
+</html>
